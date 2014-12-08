@@ -81,6 +81,7 @@ Pinteresting::Application.configure do
 #required for heroku set for host name
 config.action_mailer.default_url_options = { :host => 'onemonth-jpaull.herokuapp.com' }
 
+#Sets paperclip to upload images to amazon S3
 config.paperclip_defaults = {
   :storage => :s3,
   :s3_credentials => {
